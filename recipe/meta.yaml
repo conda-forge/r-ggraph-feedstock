@@ -1,4 +1,4 @@
-{% set version = '1.0.0' %}
+{% set version = "1.0.2" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,7 +12,7 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/ggraph_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/ggraph/ggraph_{{ version }}.tar.gz
-  sha256: 489291282f1895a7a8f2ed3a1b743cfae347edcbf663158009407c3cd9c47076
+  sha256: 4c24739ecabfc65c290a11980491a20bdaac675392a98dc30ccde76ac4b8f53a
 
 build:
   number: 0
