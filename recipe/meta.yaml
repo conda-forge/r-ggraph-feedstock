@@ -1,5 +1,4 @@
-{% set version = "1.0.2" %}
-
+{% set version = '1.0.2' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +9,12 @@ package:
 source:
   fn: ggraph_{{ version }}.tar.gz
   url:
-    - https://cran.r-project.org/src/contrib/ggraph_{{ version }}.tar.gz
-    - https://cran.r-project.org/src/contrib/Archive/ggraph/ggraph_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/ggraph_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/Archive/ggraph/ggraph_{{ version }}.tar.gz
   sha256: 4c24739ecabfc65c290a11980491a20bdaac675392a98dc30ccde76ac4b8f53a
 
 build:
+  merge_build_host: True  # [win]
   number: 0
   skip: true  # [win32]
   rpaths:
@@ -23,9 +23,17 @@ build:
 
 requirements:
   build:
+    - {{ compiler('c') }}        # [not win]
+    - {{ compiler('cxx') }}      # [not win]
+    - {{native}}toolchain        # [win]
+    - {{posix}}filesystem        # [win]
+    - {{posix}}make
+    - {{posix}}sed  # [win]
+    - {{posix}}coreutils  # [win]
+  host:
     - r-base
     - r-mass
-    - r-rcpp
+    - r-rcpp >=0.12.2
     - r-digest
     - r-dplyr
     - r-ggforce
@@ -36,14 +44,11 @@ requirements:
     - r-plyr
     - r-scales
     - r-viridis
-    - posix                # [win]
-    - {{native}}toolchain  # [win]
-    - gcc                  # [not win]
-
   run:
     - r-base
+    - {{native}}gcc-libs         # [win]
     - r-mass
-    - r-rcpp
+    - r-rcpp >=0.12.2
     - r-digest
     - r-dplyr
     - r-ggforce
@@ -54,11 +59,10 @@ requirements:
     - r-plyr
     - r-scales
     - r-viridis
-    - libgcc  # [not win]
 
 test:
   commands:
-    - $R -e "library('ggraph')"  # [not win]
+    - $R -e "library('ggraph')"           # [not win]
     - "\"%R%\" -e \"library('ggraph')\""  # [win]
 
 about:
@@ -74,8 +78,8 @@ about:
 
 extra:
   recipe-maintainers:
-    - cbrueffer
     - johanneskoester
     - bgruening
     - daler
     - jdblischak
+    - cbrueffer
