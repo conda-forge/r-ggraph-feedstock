@@ -14,14 +14,16 @@ Summary: The grammar of graphics as implemented in ggplot2 is a poor fit for gra
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/r-ggraph-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/r-ggraph-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/r-ggraph-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/r-ggraph-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/r-ggraph-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/r-ggraph-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-ggraph-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-ggraph-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/r-ggraph-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-ggraph-feedstock)
+![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-ggraph/badges/version.svg)](https://anaconda.org/conda-forge/r-ggraph)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-ggraph/badges/downloads.svg)](https://anaconda.org/conda-forge/r-ggraph)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-r--ggraph-green.svg)](https://anaconda.org/conda-forge/r-ggraph) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/r-ggraph.svg)](https://anaconda.org/conda-forge/r-ggraph) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/r-ggraph.svg)](https://anaconda.org/conda-forge/r-ggraph) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/r-ggraph.svg)](https://anaconda.org/conda-forge/r-ggraph) |
 
 Installing r-ggraph
 ===================
