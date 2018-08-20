@@ -15,9 +15,7 @@ source:
 
 build:
   merge_build_host: True  # [win]
-  number: 0
-  # r-igraph not available on win64
-  skip: true  # [win]
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -84,3 +82,4 @@ extra:
     - daler
     - jdblischak
     - cbrueffer
+    - dbast
