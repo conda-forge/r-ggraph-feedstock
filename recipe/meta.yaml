@@ -1,4 +1,4 @@
-{% set version = "2.0.3" %}
+{% set version = "2.0.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggraph_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggraph/ggraph_{{ version }}.tar.gz
-  sha256: 78fb263fb7999c4c060efb6ee66c5de0547f17e2ec4bec066be612f58134e0df
+  sha256: 9c6092d9a98b7b116f9c765ba44de7a34ceff2f584e776ef7a2082ad1d717dc8
 
 build:
   merge_build_host: true  # [win]
