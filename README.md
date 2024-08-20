@@ -7,33 +7,30 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-ggraph-feedst
 About r-ggraph
 --------------
 
-Home: https://github.com/thomasp85/ggraph
+Home: https://ggraph.data-imaginist.com
 
 Package license: MIT
 
 Summary: The grammar of graphics as implemented in ggplot2 is a poor fit for graph and network visualizations due to its reliance on tabular data input. ggraph is an extension of the ggplot2 API tailored to graph visualizations and provides the same flexible approach to building up plots layer by layer.
+
+Development: https://github.com/thomasp85/ggraph
 
 About r-ggraph
 --------------
 
-Home: https://github.com/thomasp85/ggraph
+Home: https://ggraph.data-imaginist.com
 
 Package license: MIT
 
 Summary: The grammar of graphics as implemented in ggplot2 is a poor fit for graph and network visualizations due to its reliance on tabular data input. ggraph is an extension of the ggplot2 API tailored to graph visualizations and provides the same flexible approach to building up plots layer by layer.
+
+Development: https://github.com/thomasp85/ggraph
 
 Current build status
 ====================
 
 
-<table><tr>
-    <td>Travis</td>
-    <td>
-      <a href="https://app.travis-ci.com/conda-forge/r-ggraph-feedstock">
-        <img alt="linux" src="https://img.shields.io/travis/com/conda-forge/r-ggraph-feedstock/main.svg?label=Linux">
-      </a>
-    </td>
-  </tr>
+<table>
     
   <tr>
     <td>Azure</td>
